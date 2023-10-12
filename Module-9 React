@@ -9,10 +9,35 @@ NPM fullform is "Node Packege Manager". It has already registered open-source pa
 • What is CLI command In React Js?
 
 • What is Components in React Js?
+React components are reusable bits of code. There are two types of components (1)Class components, (2)Function components.
+For example we need to copy the same part of code in all pages. So we just call that component name in that place. 
+Example:
+import React from 'react'
+function App() {
+  return (
+    <div>
+      <component_name/>
+    </div>
+  )
+}
+export default App
 
 • What is Header and Content Components in React Js?
+Header component has top on the web page & Content component is the main component in every single web pages.
+Here are some major differences between header and content component.
+[Heder Component]
+it is almost commonly used on websites every page.
+Header component Navigate the web pages.
+[Content Components]
+it is not commonly used on websites every page. Because of every single page have different content.
+Content Component is main component in web page.
 
 • How to install React Js on Windows, Linux Operating System? How to Install NPM and How to check version of NPM?
+ Windows installation:
+1 Go to nodejs official website "https://nodejs.org/en/"
+2 Download node recommended virsion and acroding to your windows bit capacity (32bit/64bit)
+ Linux installation:
+
 
 • How to check version of React Js?
 
