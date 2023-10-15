@@ -67,6 +67,37 @@ Follow this commands for check version of React in terminal.
 2) npm -v
 
 • How to change in components of React Js?
+There are three ways to change in components of React;
+1) edit component's code
+2) props
+3) states
+
+(1) edit component's code: If we have to change the component's design/ layout any more different changes we should directly change the code.
+
+(2) props: We put props in the function component's parameter as we need and then give props value in "App.js" or any other component. 
+Example:
+--------
+function Function_component ({props}) {
+  <div>
+    <h1>This is {props} example</h1>
+  </div>
+}
+
+(3) states: we put state in the function component. Here is a Example
+
+Example:
+--------
+import React, {useState} from 'react'
+function Function_State() {
+    let [name,setName]=useState("change");
+  return (
+    <div>
+        <h1>This is {name} component</h1>    
+        <button onClick={()=>setName("un changed")} >Changed component</button>
+    </div>
+  )
+}
+export default Function_State
 
 
 • How to Create a List View in React Js?
