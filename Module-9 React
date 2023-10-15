@@ -99,7 +99,71 @@ function Function_State() {
 }
 export default Function_State
 
-
 • How to Create a List View in React Js?
+React List wiew is here;
+
+=================================================================
+-----------------------------------------------------------------
+Function_component 
+-----------------------------------------------------------------
+import React from 'react';
+
+const Function_component = ({ items }) => {
+    return (
+        <div>
+            <h1>List View Example</h1>
+            <ul>
+                {items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+export default Function_component;
+
+-----------------------------------------------------------------
+App component
+-----------------------------------------------------------------
+import React, { Component } from 'react'
+import Function_component from './Function_component';
+
+export default class App extends Component {
+  render() {
+    const items = ['Item 1', 'Item 2', 'Item 3'];
+    return (
+      <div>
+        <Function_component items={items} />
+      </div>
+=================================================================
 
 • Create Increment decrement state change by button click?
+here is code...
+----------------------------------------------------------------
+import React, { useState } from 'react';
+const Fts = () => {
+  const [count, setCount] = useState(0);
+  const Increment = () => {
+    setCount(count + 1);
+  };
+  const Decrement = () => {
+    setCount(count - 1);
+  };
+  const Reset = () => {
+    setCount(count == useState);
+  };
+  return (
+    <div className='containt'>
+      <div className='row'>
+        <h1>React web</h1>
+        <h1>Count: {count}</h1>
+
+        <button onClick={Increment}>Increment</button>
+        <button onClick={Reset}>rest</button>
+        <button onClick={Decrement}>Decrement</button>
+      </div>
+    </div>
+  );
+};
+export default Fts;
