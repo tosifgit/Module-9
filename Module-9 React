@@ -5,8 +5,19 @@ React is an open-source front-end javascript library. it's used for building a r
 NPM fullform is "Node Packege Manager". It has already registered open-source packages which help developers to make more responsive designs.
 
 • What is Role of Node Js in react Js?
+Node js provides 
+(1)the run time environment, 
+(2)node packege manager(npm), 
+(3)building and serving applications, 
+(4)server side rendering without page refresh.
+Node js playes a important role in React.
 
 • What is CLI command In React Js?
+CLI fullform is Command Line Interface
+=> open your terminal, type this command: cpx create-react-app project-name
+=> change (project0name) into your project folder name and wait for packeges installation 
+=> then type this command: cd project-name
+=> this is the last command for run your project: npm start.
 
 • What is Components in React Js?
 React components are reusable bits of code. There are two types of components (1)Class components, (2)Function components.
@@ -16,7 +27,7 @@ import React from 'react'
 function App() {
   return (
     <div>
-      <component_name/>
+      <component_name/>   //this is component
     </div>
   )
 }
@@ -26,22 +37,37 @@ export default App
 Header component has top on the web page & Content component is the main component in every single web pages.
 Here are some major differences between header and content component.
 [Heder Component]
-it is almost commonly used on websites every page.
+Heder Component it is almost commonly used on websites every page.
 Header component Navigate the web pages.
 [Content Components]
 it is not commonly used on websites every page. Because of every single page have different content.
 Content Component is main component in web page.
 
 • How to install React Js on Windows, Linux Operating System? How to Install NPM and How to check version of NPM?
- Windows installation:
+ /Windows installation:
 1 Go to nodejs official website "https://nodejs.org/en/"
 2 Download node recommended virsion and acroding to your windows bit capacity (32bit/64bit)
- Linux installation:
-
+3 Check version in vs code terminal / cmd : (1)node -v. (2)npm -v
+4 Enter commands for new Packege install:
+  1) npm i -g create-react-app
+  2) npx create-react-app (project name)
+  3) cd (project name)
+  4) npm start
+ /Linux installation:
+1 Open linux terminal and install nodejs by this command:sudo apt install nodejs
+2 Check and verify this command: 
+    node -v
+    npm -v
+4 install new project folder with this command : mkdir (project name) && cd project-name
+5 install react using this command: npx create-react-app
 
 • How to check version of React Js?
+Follow this commands for check version of React in terminal.
+1) node -v
+2) npm -v
 
 • How to change in components of React Js?
+
 
 • How to Create a List View in React Js?
 
